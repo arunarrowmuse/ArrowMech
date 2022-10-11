@@ -85,7 +85,7 @@ class _ViewReportState extends State<ViewReport> {
     final w = MediaQuery.of(context).size.width;
     return SafeArea(
       child: RefreshIndicator(
-        onRefresh: (){
+        onRefresh: () {
           return Future(() => FetchReport());
         },
         child: Scaffold(
@@ -191,7 +191,8 @@ class _ViewReportState extends State<ViewReport> {
                                             style: TextStyle(
                                                 fontSize: 16,
                                                 color: Colors.black,
-                                                fontFamily: Constants.semibold)),
+                                                fontFamily:
+                                                    Constants.semibold)),
                                       ),
                                     ),
                                   ],
